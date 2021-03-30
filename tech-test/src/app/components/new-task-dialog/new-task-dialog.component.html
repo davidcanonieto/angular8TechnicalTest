@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <app-new-task [task]="data.task" [editMode]="data.canEdit" (taskCreated)="onTaskCreated()"></app-new-task>
+</div>
+<div mat-dialog-actions>
+  <button mat-button
+          mat-dialog-close>Cancel</button>
+</div>

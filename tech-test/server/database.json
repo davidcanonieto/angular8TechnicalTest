@@ -1,18 +1,46 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "label": "Kitchen Cleanup",
-      "description":  "Clean my dirty kitchen",
-      "category": "house",
-      "done": false
+      "label": "Fix car",
+      "description": "Put new engine",
+      "category": "personal",
+      "priority": "medium",
+      "dueDate": "2021-03-30T23:00:00.000Z",
+      "id": 12
     },
     {
-      "id": 2,
-      "label": "Taxes",
-      "description":  "Start doing my taxes and contact my accountant jhon for advice",
-      "category": "bureaucracy",
-      "done": "22-10-2019"
+      "label": "Prepare task assignment",
+      "description": "Prepare task assignment for Origin",
+      "category": "work",
+      "priority": "high",
+      "dueDate": "2021-03-29T23:00:00.000Z",
+      "id": 13,
+      "completionDate": "2021-03-30T10:34:24.830Z",
+      "done": true
+    },
+    {
+      "label": "Buy apples",
+      "description": "Apples, bananas and tomatoes",
+      "category": "personal",
+      "priority": "low",
+      "dueDate": null,
+      "id": 14
+    },
+    {
+      "label": "Real Madrid - Liverpool",
+      "description": "Buy beers and snacks for the match",
+      "category": "personal",
+      "priority": "high",
+      "dueDate": "2021-04-06T23:00:00.000Z",
+      "id": 15
+    },
+    {
+      "label": "Add other cool ideas to App",
+      "description": "Add ideas such as sorting and pagination to this app",
+      "category": "work",
+      "priority": "medium",
+      "dueDate": null,
+      "id": 16
     }
   ]
 }

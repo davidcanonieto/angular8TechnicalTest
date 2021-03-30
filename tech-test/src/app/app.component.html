@@ -1,2 +1,14 @@
-<h1 class="title-text">welcome to angular 8 Origin technical test: {{title}}</h1>
+<mat-toolbar color="primary">
+  <mat-icon>thumb_up_off_alt</mat-icon>
+  <span>To Do List App - David Cano</span>
+</mat-toolbar>
 
+<mat-sidenav-container>
+  <mat-sidenav mode="side"
+               opened>
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

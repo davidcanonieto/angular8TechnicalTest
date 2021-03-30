@@ -1,0 +1,59 @@
+<div [formGroup]="taskForm"
+     class="task-form">
+
+  <mat-form-field class="task-form-field">
+    <input matInput
+           data-automation-id="label-input"
+           formControlName="label"
+           placeholder="Title">
+  </mat-form-field>
+  <mat-form-field class="task-form-field">
+    <input matInput
+           data-automation-id="description-input"
+           formControlName="description"
+           placeholder="Description">
+  </mat-form-field>
+
+  <div class="task-form-subfield">
+    <mat-form-field class="task-form-field">
+      <mat-label>Category</mat-label>
+      <mat-select formControlName="category"
+                  data-automation-id="category-input">
+        <mat-option *ngFor="let category of categories"
+                    [value]="category">
+          {{category | titlecase}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="task-form-field">
+      <mat-label>Priority</mat-label>
+      <mat-select formControlName="priority">
+        <mat-option *ngFor="let priority of priorities"
+                    [value]="priority">
+          {{priority | titlecase}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="task-form-field">
+      <input matInput
+             [matDatepicker]="picker"
+             formControlName="dueDate"
+             placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix
+                             [for]="picker">
+      </mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+
+
+  <div class="task-form-save">
+    <button mat-raised-button
+            color="primary"
+            [disabled]="taskForm.invalid"
+            (click)="saveTask()">Save task</button>
+  </div>
+</div>

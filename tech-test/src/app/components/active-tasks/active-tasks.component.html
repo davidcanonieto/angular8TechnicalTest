@@ -1,0 +1,2 @@
+<button color="accent" mat-raised-button (click)="openDialog()" class="new-task-button">Create new task</button>
+<app-task-list [data]="tasks$ | async" [canEdit]="true" (dataChanged)="reloadData()"></app-task-list>
